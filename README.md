@@ -1,3 +1,5 @@
+# MNIST Digit Classification Model
+
 - **Parameters**: 7,544 (all trainable)
 - **Model Size**: 0.68 MB
 - **Architecture Overview**:
