@@ -8,8 +8,6 @@ import matplotlib.pyplot as plt
 from torchsummary import summary
 from utils import set_seed
 
-
-
 def main():
     # Set seed for reproducibility
     set_seed(42)  # You can change this seed value
