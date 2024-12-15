@@ -1,6 +1,18 @@
 import torch
 from torchvision import transforms
 from tqdm import tqdm
+import random
+import numpy as np
+
+def set_seed(seed=42):
+    """Set seeds for reproducibility."""
+    random.seed(seed)
+    np.random.seed(seed)
+    torch.manual_seed(seed)
+    torch.cuda.manual_seed_all(seed)
+    # For deterministic behavior
+    torch.backends.cudnn.deterministic = True
+    torch.backends.cudnn.benchmark = False
 
 def get_transforms():
     train_transforms = transforms.Compose([

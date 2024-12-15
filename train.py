@@ -6,8 +6,14 @@ from model import Net
 from utils import get_transforms, train, test
 import matplotlib.pyplot as plt
 from torchsummary import summary
+from utils import set_seed
+
+
 
 def main():
+    # Set seed for reproducibility
+    set_seed(42)  # You can change this seed value
+    
     # CUDA setup
     cuda = torch.cuda.is_available()
     device = torch.device("cuda" if cuda else "cpu")
