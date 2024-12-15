@@ -167,5 +167,6 @@ Loss=0.0093 Batch_id=468 Accuracy=99.21: 100%|███████████�
 
 Test set: Average loss: 0.0186, Accuracy: 9941/10000 (99.41%)
 ```
+## Plots
 
 ![plots](./output.png)
